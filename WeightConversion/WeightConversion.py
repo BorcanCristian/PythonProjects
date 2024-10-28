@@ -4,12 +4,13 @@ weight = float(input("Enter your weight: "))
 unit = input("Kilograms or Pounds? (K or L): ")
 
 
-if unit == "K":
+if unit.upper() == "K":
+    unit = "Kgs."
     weight = weight * 2.205
     unit = "Lbs."
 
 
-elif unit == "L":
+elif unit.upper() == "L":
     weight = weight / 2.205
     unit = "Kgs."
 
